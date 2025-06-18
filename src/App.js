@@ -39,7 +39,7 @@ export default function App() {
       const res = await fetch("https://student-stress-diagnosis-backend.onrender.com/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(numericdata),
+        body: JSON.stringify(formData),
       });
 
       const data = await res.json();
